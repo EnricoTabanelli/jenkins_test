@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh './test.sh'
+                sh "chmod +x -R ${env.WORKSPACE}"
+		sh './test.sh'
             }
         }
     }
