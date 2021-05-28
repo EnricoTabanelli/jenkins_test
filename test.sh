@@ -1,6 +1,6 @@
 #!/bin/bash
 x=1
-y="Python 3.6.12"
+y="Python 3.9.5"
 RESULT=$(python3 --version)
 
 echo "$RESULT"
