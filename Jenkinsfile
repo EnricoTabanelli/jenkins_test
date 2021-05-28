@@ -3,11 +3,26 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python3 --version'
+                sh 'test.sh'
             }
         }
     }
+
+post {
+
+	success {
+
+		echo 'Good!'	
+
+	}
+	
+	failure {
+
+		echo 'A very bad idea!'
+
+	}
+
 }
-
-
+	
+}
 
