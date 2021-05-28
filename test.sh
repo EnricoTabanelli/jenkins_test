@@ -5,7 +5,7 @@ RESULT=$(python3 --version)
 
 echo "$RESULT"
 
-if [ "$RESULT" == "$y" ]; then
+if [ "$RESULT" = "$y" ]; then
 	echo "OK"
 	exit 0
 else
