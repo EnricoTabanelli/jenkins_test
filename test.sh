@@ -1,5 +1,5 @@
 #!/bin/bash
-x=1
+x=2
 y="Python 3.9.5"
 RESULT=$(python3 --version)
 
